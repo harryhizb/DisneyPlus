@@ -57,7 +57,7 @@ body {
     color: #fff;
   
 }
-.card-body{
+#hero-card-1{
     position:absolute;
     top: 53%;
     left: 6%;
@@ -67,7 +67,7 @@ body {
     margin: 0;
     
 }
-.second-card{
+#hero-card-2{
     position:absolute;
     top: 53%;
     left: 27%;
@@ -152,4 +152,42 @@ body {
     align-items:center;
     justify-content: center;
     font-size: 0.8rem;
+}
+
+
+.footer-main-cards {
+    position: absolute;
+    top: 250%;
+    right: 6%;
+    width: 45%; 
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-right: 2%;
+}
+
+.footer-btns {
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#footer-card-1 {
+    flex: 0 0 40%; 
+}
+
+#footer-card-2 {
+    flex: 0 0 40%; 
+
+}
+
+.footer-h5, .footer-h5-2 {
+    margin-bottom: 10px; 
+}
+
+.btn-info {
+    margin-top: 8px; 
 }
