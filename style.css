@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -33,6 +32,21 @@ body {
     right: 2%;
     z-index: 1;
     transform: scale(1.1);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-login {
+        width: 20%;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+
+        .jumbotron{
+            display: block;
+            max-width: 100%;
+        }
+    }
 }
 
 .btn-login:hover {
@@ -40,12 +54,24 @@ body {
 }
 
 .brand-logo {
+    background-image:url(/picturs/logo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
     position: absolute;
     min-height: 10vh;
     width: 13%;
     top: 14%;
-    left: 6%;
+    left: 5%;
     z-index: 2; 
+}
+@media screen and (max-width: 768px) {
+    .brand-logo {
+        min-height: 7vh; 
+        width: 20%; 
+        top: 10%;
+       
+    }
 }
 
 .title-1{
@@ -57,6 +83,7 @@ body {
     color: #fff;
   
 }
+
 #hero-card-1{
     position:absolute;
     top: 53%;
@@ -74,6 +101,7 @@ body {
     z-index: 2;
     color: #fff;
 }
+
 .card-text{
     font-size: x-small;
     color:gray;
@@ -99,6 +127,39 @@ body {
     color:rgb(180, 169, 169);
     font-size: small;
   }
+
+  @media only screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+      .title-1{
+        font-size: 1.5rem;
+        top: 20%;
+      }
+      #hero-card-1{
+            position:relative;
+            z-index: 2;
+            color: #fff;
+            margin-top: 25%;
+            margin-left: 10%;
+            
+            
+        }
+        #hero-card-2{
+            position:relative;
+            z-index: 2;
+            color: #fff;
+            margin-top: 1%; 
+            left: auto;
+            margin-left: 17%;
+            margin-bottom: 10%;
+            
+        }
+        .card-text{
+            color: white;
+        }
+      }
+    
   .details{
     background-color:#040814;
     color:rgb(177, 173, 173);
@@ -106,15 +167,15 @@ body {
     display: flex;
     align-items:center;
     justify-content: center;
-    padding: 20px;
+    margin-bottom: 1%;
   }
   .details span{
-    margin-left: 19px;
+    margin-bottom: 2%;
+    
   }
 
 .heading{
     color:#fff;
-    /* padding: 10px; */
     justify-content: center;
     align-items:center;
     display: flex;
@@ -136,6 +197,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 .heading-1{
     margin-top: 70px;
     padding: 10px;
@@ -158,36 +220,284 @@ body {
 .footer-main-cards {
     position: absolute;
     top: 250%;
-    right: 6%;
-    width: 45%; 
+    right: 12%;
+    width: 40%; 
     border-top: 1px solid gray;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     padding-top: 10px;
-    padding-right: 2%;
+    color:white;
+    margin-top: 3%;
+
 }
 
 .footer-btns {
     position: relative;
     color: #fff;
     background-color: transparent;
-    padding: 10px;
+    
 }
 
 #footer-card-1 {
-    flex: 0 0 40%; 
+    flex: 0 0 50%; 
+    margin-left: 10%;
 }
 
 #footer-card-2 {
-    flex: 0 0 40%; 
+    flex: 0 0 50%; 
 
 }
-
+@media only screen and (max-width: 767px) {
+    .container-11 {
+        display: none !important;
+    }}
 .footer-h5, .footer-h5-2 {
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
+    font-size: medium;
+    margin-left: 7%;
 }
 
 .btn-info {
     margin-top: 8px; 
 }
+
+.container {
+    margin-top: 7%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    padding: 20px 0;
+}
+
+.name {
+    flex: 0 0 20%; 
+    color: rgb(177, 173, 173);;
+    font-size: 0.8rem;
+}
+
+.descriptions {
+    display: flex; 
+    flex: 1; 
+}
+
+.des-1 {
+    flex: 0 0 45%; /* Adjust as needed */
+    margin-left: 41%;
+}
+
+.p-tab {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    color:rgb(177, 173, 173);
+    
+}
+
+.des-2 {
+    flex: 0 0 45%; /* Adjust as needed */
+    margin-left: -13%;
+}
+@media screen and (max-width:768px) {
+    .des-2{
+        display: none;
+    }
+    .p-tab{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+
+    }
+
+}
+
+.p-tab-1 {
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 0.8rem;
+    color:rgb(177, 173, 173);
+}
+
+.tab-descrip{
+    font-size: 0.6rem;
+    color:rgb(177, 173, 173);;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+.p-tab-s{
+    font-size: 0.7rem;
+    margin-top: 10%;
+    margin-left: 13%;
+    color:rgb(177, 173, 173);
+}
+.p-tab-k{
+    font-size: 0.7rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    color:rgb(177, 173, 173);
+}
+.border-sp{
+    border-top:1px solid rgb(177, 173, 173);
+}
+.con-1{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    margin-top: 10%;
+
+}
+
+.img-container{
+    background-image:url(/picturs/card.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    width: 78%;
+    height: 76%;
+    position: relative;
+    background-size:cover; 
+    display: flex;
+    justify-content: center;
+    margin-left: 7%;
+
+}
+.image-title{
+    position: relative;
+    right: -87%;
+    top: -54%;
+
+}
+.text-card{
+    color:rgb(177, 173, 173);
+    position: relative;
+    left: 87%;
+    top: -50%;
+    width: 70%;
+    font-size: small!important;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .img-container {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; 
+        width: 100%;
+        height: 100%;
+        position: relative; 
+        display: flex; 
+        justify-content: center;
+        margin-left: 25%; 
+}
+.image-title{
+    position: relative;
+    top: -7%;
+    left: 20%;
+
+}}
+#faq-section {
+    background-color: transparent;
+    margin-top: 55%;
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+#faq-section .card {
+    margin-bottom: 20px;
+    background-color: transparent; 
+}
+
+#faq-section .card-header {
+    background-color: #13151d; 
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+#faq-section .card .btn {
+    color: white; 
+}
+
+#faq-section .card-body {
+    background-color: transparent; /
+}
+
+#faq-title {
+    color: white;
+    margin-left: 33%;
+}
+#foot-imge {
+    position: absolute;
+    background-image: url('/picturs/second-logo.png'); 
+    background-position: center;
+    background-size: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    z-index: 1;
+    margin-top: 5%;
+    padding: 30px;
+    left: 45%;
+}
+#footer-section {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+#foot-img {
+    background-image: url('/picturs/second-logo.png'); /* Ensure the path is correct */
+    background-position: center;
+    background-size: contain; /* Use 'contain' to ensure the entire image is shown */
+    width: 50px; /* Explicit width in pixels for better control */
+    height: 50px; /* Explicit height in pixels for better control */
+    margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 20px; 
+    color:rgb(177, 173, 173); 
+    font-size: 0.8em; 
+    width: 60%;
+    margin-left: 22%;
+    margin-top: 13%;
+}
+
+#footer-content a {
+    color: inherit; /* Use the same color as parent */
+    text-decoration: none;
+    margin: 5px;
+}
+
+#footer-section p {
+    font-size: 0.8em; /* Small font size */
+    color:rgb(177, 173, 173); 
+    
+}
+
+
+#footer-section p {
+    font-size: 0.8em; /* Small font size */
+}
+
+
